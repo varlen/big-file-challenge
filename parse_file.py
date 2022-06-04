@@ -1,9 +1,9 @@
-from collections import defaultdict
+from collections import Counter
 
-ocurrences = defaultdict(lambda : 0)
+ocurrences = Counter()
 
 with open('bigfile.txt', mode='r') as file:
-    while line := file.readline():
+    for line in file:
         ocurrences[line.strip()] += 1
 
 print(dict(ocurrences))

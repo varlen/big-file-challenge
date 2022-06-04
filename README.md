@@ -24,7 +24,13 @@ That's exactly what's needed for this challenge. ```.readline()``` allows us to 
 
 This solution also uses a ```defaultdict```, which is a dictionary structure that returns a default value when a key is not found, removing the need to check if a key exists explicitly.
 
-It also uses the ```:=``` operator, allowing to check a condition and attribute a value in the same line.
+It also originally used the ```:=``` operator, allowing to check a condition and attribute a value in the same line.
+
+---
+### Edit: 
+
+- Implemented modifications proposed by [@brunokim_mc](https://twitter.com/brunokim_mc/status/1532694008778182656):
+    - As proposed by Bruno, the implementation is cleaner after using a ```Counter``` collection instead of ```defaultdict``` and iterating directly over the ```file``` object which have the same behavior as ```.readline()```
 
 ---
 
